@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notářská kancelář - Pohanková</title>
   <link rel="stylesheet" href="styly.css">
- <link rel="icon" type="image/png"  href="ikonka.png">
+  <link rel="icon" type="image/png" href="ikonka.png">
 </head>
 <body>
+  
   <nav class="navbar">
     <div class="nav-container">
-      <a href="#" class="logo">⚖️ Notářská kancelář</a>
+      <a href="#" class="logo">
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 5.5V7H9V5.5L3 7V9L9 10.5V12H15V10.5L21 9Z"/>
+          <path d="M19 12H5V22H19V12Z"/>
+        </svg>
+        Notářská kancelář
+      </a>
 
       <input type="checkbox" id="menu-toggle" class="menu-checkbox">
       <label for="menu-toggle" class="menu-icon">
@@ -31,40 +38,40 @@
 
   <main>
     <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Spolehlivé notářské služby online</h1>
-      <p>Rezervujte termín, ověřte podpisy a využijte právní poradenství přímo z pohodlí domova.</p>
-    
-    <!-- Statistika -->
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-number">30+</span>
-        <span class="stat-label">let praxe</span>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Spolehlivé notářské služby online</h1>
+        <p>Rezervujte termín, ověřte podpisy a využijte právní poradenství přímo z pohodlí domova.</p>
+      
+        <!-- Statistika -->
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">let praxe</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5,000+</span>
+            <span class="stat-label">spokojených klientů</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">24h</span>
+            <span class="stat-label">rychlé vyřízení</span>
+          </div>
+        </div>
+        
+        <div class="hero-buttons">
+          <a class="tlac" href="register.php">Založit účet</a>
+          <a class="tlac" href="#sluzby">Více o službách</a>
+        </div>
       </div>
-      <div class="stat">
-        <span class="stat-number">5,000+</span>
-        <span class="stat-label">spokojených klientů</span>
+      
+      <!-- Obrázek -->
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+             alt="Profesionální notářská kancelář" 
+             class="hero-img">
       </div>
-      <div class="stat">
-        <span class="stat-number">24h</span>
-        <span class="stat-label">rychlé vyřízení</span>
-      </div>
-    </div>
-    
-    <div class="hero-buttons">
-      <a class="tlac" href="register.php">Založit účet</a>
-      <a class="tlac" href="#sluzby">Více o službách</a>
-    </div>
-  </div>
-  
-  <!-- Obrázek -->
-  <div class="hero-image">
-    <div class="hero-img-placeholder">
-      <span>⚖️ Notářské služby</span>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Výhody -->
     <section class="vyhody">
@@ -158,64 +165,70 @@
       </div>
     </section>
 
-    <!-- Galerie - upravená pro 2 obrázky vedle sebe na mobilech -->
+    <!-- Galerie -->
     <section id="galerie" class="sekce">
       <div class="container">
         <h2>Galerie</h2>
         <div class="galerie-container">
           <div class="galerie-item">
-            <div class="galerie-img-placeholder">
-              <span>Kancelář - interiér</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Moderní kancelářský interiér">
+            <div class="galerie-caption">Moderní kancelářský interiér</div>
           </div>
           <div class="galerie-item">
-            <div class="galerie-img-placeholder">
-              <span>Jednací místnost</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Jednací místnost">
+            <div class="galerie-caption">Jednací místnost</div>
           </div>
           <div class="galerie-item">
-            <div class="galerie-img-placeholder">
-              <span>Recepce</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Profesionální recepce">
+            <div class="galerie-caption">Profesionální recepce</div>
           </div>
           <div class="galerie-item">
-            <div class="galerie-img-placeholder">
-              <span>Notářský úřad</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Notářský úřad">
+            <div class="galerie-caption">Notářský úřad</div>
           </div>
           <div class="galerie-item">
-            <div class="galerie-img-placeholder">
-              <span>Konferenční místnost</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Konferenční místnost">
+            <div class="galerie-caption">Konferenční místnost</div>
           </div>
           <div class="galerie-item">
-            <div class="galerie-img-placeholder">
-              <span>Archiv dokumentů</span>
-            </div>
-          </div>
-          <div class="galerie-item">
-            <div class="galerie-img-placeholder">
-              <span>Zasedací místnost</span>
-            </div>
-          </div>
-          <div class="galerie-item">
-            <div class="galerie-img-placeholder">
-              <span>Čekárna</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Archiv dokumentů">
+            <div class="galerie-caption">Archiv dokumentů</div>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <!-- Footer -->
   <footer id="kontakt" class="footer-kontakt">
     <div class="footer-container">
       <div class="kontakt-info">
         <h3>Kontaktujte nás</h3>
-        <p>📍 Adresa: Oldřichova 159, 674 01 Třebíč 1</p>
-        <p>📞 Telefon: +420 568 846 677</p>
-        <p>✉️ Email: info@notarskakancelar.cz</p>
-        <p>🕒 Pracovní doba:</p>
+        <p>
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          Adresa: Oldřichova 159, 674 01 Třebíč 1
+        </p>
+        <p>
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+          </svg>
+          Telefon: +420 568 846 677
+        </p>
+        <p>
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          Email: info@notarskakancelar.cz
+        </p>
+        <p>
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+            <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+          </svg>
+          Pracovní doba:
+        </p>
         <p>Po-St: 8:00–12:00 13:00-16:00</p>
         <p>Čt: 8:00-12:00 13:00-15:00</p>
         <p>Pt: 7:30-13:30</p>
@@ -230,5 +243,18 @@
     </div>
     <p class="footer-copy">&copy; 2025 Notářská kancelář – Všechna práva vyhrazena</p>
   </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuCheckbox = document.getElementById('menu-toggle');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        menuCheckbox.checked = false;
+      });
+    });
+  });
+  </script>
 </body>
 </html>
